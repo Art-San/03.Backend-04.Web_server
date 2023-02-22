@@ -15,7 +15,7 @@ async function addNote(title) {
     notes.push(note)
 
     await fs.writeFile(notesPath, JSON.stringify(notes))
-    console.log(chalk.white.bgGreen('Note was added!'))
+    console.log(chalk.bgWhite('Note was added!'))
 }
 
 
